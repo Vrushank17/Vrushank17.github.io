@@ -11805,11 +11805,13 @@ p {
   display: flex;
   align-items: center;
   width: 75%;
+  max-width: 100%;
   justify-content: center;
 }
 
 .landing-img-holder {
   width: 100%;
+  max-width: 100%;
   padding-left: 50px;
   z-index: 2;
 }
