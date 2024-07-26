@@ -45,20 +45,26 @@
     <!-- page header -->
     <header id="home" class="header">
         <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="down">Vrushank Prakash</span>
-            </h1>
-            <p class="header-subtitle">Aspriring Software Engineer and ML Researcher</p>            
-        </div>              
-    </header><!-- end of page header -->
+        <div class="landing-items">
+            <div class="header-content container hidden">
+                <h1 class="header-title">
+                    <span class="down">Hey, I'm Vrushank</span>
+                </h1>
+                <p class="header-subtitle">Aspriring Software Engineer and ML Researcher</p>            
+            </div>
+            <div class="landing-img-holder">
+                <img src="assets/imgs/landing.jpg" class="landing-img" alt="">
+            </div>  
+        </div>        
+    </header>
+    <!-- end of page header -->
 
     <!-- about section -->
     <section class="section pt-0" id="about">
         <!-- container -->
         <div class="container text-center">
             <!-- about wrapper -->
-            <div class="about">
+            <div class="about hidden">
                 <div class="about-img-holder">
                     <img src="assets/imgs/website_pfp.jpg" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
                 </div>
@@ -81,7 +87,7 @@
     </section> <!-- end of about section -->
 
     <!-- experience section -->
-    <section class="section" id="experience">
+    <section class="section hidden" id="experience">
         <div class="container text-center">
             <h6 class="section-title mb-6">Experience</h6>
             <!-- timeline -->
@@ -164,21 +170,21 @@
                                 </ul>
                             </p>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </div><!-- end of row -->
         </div>
     </section><!-- end of service section -->
 
     <!-- projects section -->
-    <section class="section" id="projects">
+    <section class="section hidden" id="projects">
         <div class="container text-center">
             <h6 class="section-title mb-6">Projects</h6>
             <!-- row -->
             <div class="row">
                 <div class="col-md-4">
                     <a href="https://github.com/Vrushank17/FitChatBot" target="_blank">
-                        <span class="portfolio-card">
+                        <span class="portfolio-card hidden">
                             <h4>FitChat</h4>
                             <p class="font-weight-normal">
                                 A simple and effective chatbot finetuned on the BERT Sequence Classification Model that answers questions or concerns related to physical health or fitness.
@@ -188,7 +194,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="https://github.com/Vrushank17/EnglishAI" target="_blank">
-                        <span class="portfolio-card">
+                        <span class="portfolio-card hidden">
                             <h4>EnglishAI</h5>
                             <p class="font-weight-normal">Submission to CalHacks AI 2023. An AI-powered English teacher that provides users with 1-on-1 
                                 speaking practice and real-time updates on conversational skills</p>                      
@@ -197,7 +203,7 @@
                 </div>
                 <div class="col-md-4">
                     <a href="">
-                        <span class="portfolio-card">
+                        <span class="portfolio-card hidden">
                             <h4>MNIST Dataset Classifier</h5>
                             <p class="font-weight-normal">Developed a digit classifier for the MNIST Dataset with a Support Vector Machine. Placed in top 5
                                 out of 700+ students in my ML class Kaggle competition with 99% accuracy!
@@ -210,7 +216,7 @@
     </section> <!-- end of portfolio section -->
 
     <!-- contact section -->
-    <section class="section" id="contact">
+    <section class="section hidden" id="contact">
         <div class="container text-center">
             <h6 class="section-title mb-5">Contact Me</h6>
             <!-- contact form -->
