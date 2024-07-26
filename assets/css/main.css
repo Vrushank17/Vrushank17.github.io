@@ -11805,6 +11805,7 @@ p {
   display: flex;
   align-items: center;
   width: 75%;
+  justify-content: center;
 }
 
 .landing-img-holder {
@@ -11815,6 +11816,7 @@ p {
 
 .landing-img-holder .landing-img {
   width: 100%;
+  max-width: 100%;
   height: 100%;
   margin-bottom: 15px;
   border-radius: 50%;
@@ -11830,13 +11832,6 @@ p {
     min-height: auto;
     text-align: center;
     background-size: cover;
-  }
-  .landing-img-holder {
-    max-width: 220px;
-    min-width: 100%;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 20px;
   }
 }
 
