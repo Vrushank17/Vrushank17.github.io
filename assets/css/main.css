@@ -11122,29 +11122,49 @@ p {
 }
 
 /*/ portfolio wrapper */
+
+.portfolio-list {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 20px; /* Space around the container */
+  box-sizing: border-box; /* Include padding in element's total width and height */
+  overflow: auto; /* Allow scrolling if content overflows */
+}
+
 .portfolio-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
-  border: 3px solid #ddd; /* Add border with desired color and width */
+  border: 3px solid #ddd; 
   border-radius: 8px;
-  width: 100%; /* Ensure it takes full width of the column */
-  height: 100%;
+  width: 70vw; /* 80% of viewport width */
+  max-height: 80vh; /* Ensure card does not exceed 80% of viewport height */
   padding: 20px;
-  box-sizing: border-box; /* Ensure padding is included in the height */
-  text-align: center; /* Center the text */
-  text-decoration: none; /* Remove underline from link */
-  color: inherit; /* Inherit color from parent */
+  text-align: left;
+  box-sizing: border-box; 
+  text-decoration: none; 
+  color: inherit; 
   background-color: var(--light);
   transition: transform 0.2s, background-color 0.2s;
+  margin-bottom: 20px;
 }
 
-.portfolio-card:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-10px);
+.proj-icon {
+  text-align: left; /* Center align the icons */
 }
+
+/* Increase the size of the social icons */
+.proj-icon a {
+  width: 30px; /* Set width of the circle */
+  height: 30px; /* Set height of the circle */
+  color: #333; /* Default color of the icon */
+  font-size: 2rem; /* Size of the icon */
+  margin: 0 10px; /* Space between icons */
+  text-decoration: none; /* Remove underline from links */
+}
+
 
 /*!
  * Hamburgers
@@ -11976,7 +11996,6 @@ p {
 .socials {
   text-align: left; /* Center align the icons */
   margin-top: 30px; /* Adjust this value to increase space */
-
 }
 
 /* Increase the size of the social icons */
