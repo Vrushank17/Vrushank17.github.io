@@ -11165,6 +11165,18 @@ p {
   text-decoration: none; /* Remove underline from links */
 }
 
+@media (min-width: 1024px) {
+  .portfolio-list {
+    flex-direction: column; /* Arrange items in rows */
+    justify-content: space-around; /* Space items out evenly */
+  }
+
+  .portfolio-card {
+    width: 45vw; /* Use 30% of viewport width for each card on larger screens */
+    max-height: none; /* Remove height limitation for larger screens */
+    margin: 10px; /* Add more space between cards on larger screens */
+  }
+}
 
 /*!
  * Hamburgers
